@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% comment %} Этот шаблон будет расширять шаблон base.html {% endcomment %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'card/css/main.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1>Главная страница</h1>
+    <p>Добро пожаловать на наш сайт!</p>
+    <p>На нашем сайте {{ cards_count }} карточек и {{ users_count }} пользователей</p>
+{% endblock %}

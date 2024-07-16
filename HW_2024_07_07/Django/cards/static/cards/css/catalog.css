@@ -1,0 +1,12 @@
+.card-list{
+    list-style: none;
+    /* карточки идут подряд */
+    display: flex;
+    flex-wrap: wrap;
+    /* отступы между карточками */
+    gap: 10px;
+}
+.li-list{
+/* ограничение размера карточек */
+    max-width: 300px;
+}
